@@ -9,7 +9,4 @@ metadata:
 spec:
  containers:
    - name: webserver
-     image: mynginx
-     ports:
-      - containerPort: 80
-        hostPort: 8080
+     image: nginx
