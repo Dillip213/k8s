@@ -16,11 +16,12 @@ spec:
    name: tomcat-pod 
    labels:
     type: appserver
+    author: nareshit
   spec:
    containers:
     - name:  appserver
       image:  tomcat
       ports:
        - containerPort: 8080
-         hostPort: 7070
- 
+         hostPort: 9090
+...
