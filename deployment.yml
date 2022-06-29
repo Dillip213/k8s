@@ -15,12 +15,14 @@ spec:
   metadata:
    name: nginx-pod
    labels:
+    author: intelliqit 
     type: proxyserver
 
   spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:1.7.9
     ports:
      - containerPort: 80
        hostPort: 8888
+...
