@@ -8,5 +8,5 @@ metadata:
    author: intelliqit
 spec:
  containers:
-   - name: webserver
-     image: nginx
+  - name: mynginx
+    image: nginx
