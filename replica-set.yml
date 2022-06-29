@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: replicaset
+kind: RepliCaset
 metadata:
  name: tomcat-rs
  labels:
@@ -12,15 +12,15 @@ spec:
   matchLabels:
    type: appserver
  template: 
- metadata:
-  name: tomcat-pod 
-  labels:
-   type: appserver
- spec:
-  containers:
-   - name:  appserver
-     image:  tomcat
-     ports:
-      - containerPort: 8080
-        hostPort: 7070
+  metadata:
+   name: tomcat-pod 
+   labels:
+    type: appserver
+  spec:
+   containers:
+    - name:  appserver
+      image:  tomcat
+      ports:
+       - containerPort: 8080
+         hostPort: 7070
  
