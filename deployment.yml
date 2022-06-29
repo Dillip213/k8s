@@ -9,7 +9,7 @@ metadata:
 spec:
  replicas: 3
  selector: 
-  matchLable:
+  matchLabels:
    type: proxyserver
  template:
   metadata:
