@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins
+  labels:
+    type: ci-cd
+    author: nareshit
+spec:
+  containers:
+    - name: jenkins
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
+          hostPort: 8080
+          
