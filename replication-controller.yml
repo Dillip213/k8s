@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: replicationController 
+metadata:
+  name: httpd-rc
+  labels:
+    author: nareshit
+spec:
+  replicas: 3
+  template: 
+  metadata:
+   name: httpd-pod
+   labels:
+    author: nareshit
+  spec:
+   containers:
+    - name: myhttpd
+      image: httpd
+      ports:
+       - containerPort: 80
+         hostPort: 8080
