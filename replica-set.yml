@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: RepliCaset
+kind: replicaset
 metadata:
  name: tomcat-rs
  labels:
