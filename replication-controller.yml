@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: replicationController 
 metadata:
-  name: httpd-rc
+  name: httpd
   labels:
     author: nareshit
 spec:
   replicas: 3
   template: 
   metadata:
-   name: httpd-pod
+   name: httpd
    labels:
     author: nareshit
   spec:
