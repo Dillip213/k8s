@@ -1,0 +1,13 @@
+---
+version: '3.8'
+services:
+  mydb:
+   image: mysql
+   environment:
+    MYSQL_ROOT_PASSWORD: intelliqit
+  wordpress:
+   image: wordpress
+   ports:
+     - 8989:80
+   deploy:
+     replicas: 3
