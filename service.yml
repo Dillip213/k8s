@@ -8,9 +8,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - targetPort: 80
-       ports: 80
-       NodePort: 30008
+   - targetPort: 80
+     ports: 80
+     NodePort: 30008
   selector:
    author: intelliqit
    type: proxy 
