@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: Deployment 
+metadata: 
+ name:  ghost-deployment
+ labels:
+  author: dillip
+spec:
+ replicas: 2
+ selector:
+  matchLabels:
+  author: dillip
+ template:
+  metadata:
+   name: ghost-pod
+   labels: 
+    author: dillip
+  spec:
+   containers: 
+    - name: ghost
+      image:  ghost
