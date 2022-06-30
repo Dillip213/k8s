@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: ghost
+  labels:
+    author: dillip
+spec:
+  containers:
+    - name: java
+      image: openjdk:12
+      
