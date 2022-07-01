@@ -13,4 +13,3 @@ spec:
     targetPort: 80
  selector: 
   name: voting-app-pod
-  app: demo-voting-app
