@@ -1,0 +1,12 @@
+---
+- name: user creation
+  hosts: all
+  tasks: 
+   - name: user create
+     user:
+      name:  chikun
+      password: rasmi
+      commit: "my heart"
+      shell: /bin/bash
+      uid: 1211
+      
